@@ -1,0 +1,32 @@
+Singleton Design Pattern
+Usecase
+To use, lets say we have a database manager class, which opens the connection with Database and queries the database. 
+But connecting with database is a heavy operation, so to we need to connect it everytime a query is to be made, but it can be one time operation. 
+So Singleton comes as the perfect use for this. 
+Everytime we want to make a query, we will get the singleton instance and hence the connection need not be made again.
+
+
+Prototype design Pattern
+Usecase
+
+Let’s consider a scenario where the client is running a Movie Rating website.
+ Client is using a External Rest API to fetch all the details(name,releasedate,genre etc) related to the movie title. 
+ As this is an external API, Client have to pay certain fee for every API call.
+Client website is designed in such a way that rating of the Movie can change periodically, 
+but other data i.e Name, Genre and releaseDate is constant and will never change.
+Client needs an new object of Movie for every visitor who rates the movie.
+Inorder to save money, The External API should be hit only once and for every subsequent request,
+ We can use prototype design pattern to return the cloned object of the previous object.
+
+
+
+Builder design pattern
+Usecase
+The Builder design pattern is often used in real-life scenarios when creating complex objects with many configuration options.
+ Let’s consider some real-life scenarios where the Builder design pattern is used:Building a Custom PC: When building a custom PC, 
+ you may need to select different components such as CPU, GPU, RAM, motherboard, power supply, and storage devices,
+ among others. Each component has its own set of parameters that need to be set up correctly to ensure optimal performance. 
+ To make this process more manageable, you could use the Builder pattern.
+In this case, the Builder pattern could be used to create a custom PC step by step.
+ Each component would have its own builder, responsible for setting up the necessary parameters for that component. 
+ The PC builder would then coordinate the creation of each component and assemble them into a final product.

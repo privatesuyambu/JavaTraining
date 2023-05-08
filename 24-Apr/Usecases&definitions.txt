@@ -1,0 +1,52 @@
+Tables:
+4 
+Doctor
+patient
+appointment
+Slot ID
+
+
+Patient: register patient - patient table. no unregister.
+==========================================================
+patient ID,
+name,
+gender,
+Dob,
+phoneno
+
+Doctor : static info data 
+=================================
+creation of table 
+cardiologist, dentist.
+doctor id,
+name
+speciality
+
+
+Slot table: static data.
+=======================
+slot ID
+date
+Starttime
+endtime.
+
+ 
+
+
+Appointment:
+================
+Appointm Id,
+patientid,
+doctorid
+slotid.
+Status
+
+ 
+
+
+Methods.:
+========================
+register patient ( patient class)- Post
+getDoctorAvailablity (date, doctorID) -> return list of slot details - Get
+bookAppointment(patientId,Doctid,slotid) returns Appointment ID  - post 
+cancelappointment(Appointment ID) pu
